@@ -1,7 +1,7 @@
 /** Implements a mario. */
 class Mario {
 
-   field int x, y; // screen location of the mario's top-left corner
+   field int x, y; // screen location of mario
    field int size; // length of this mario, in pixels
    field int time; // time for the mario to jump
 

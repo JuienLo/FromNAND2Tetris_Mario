@@ -1,0 +1,26 @@
+/** Implements a Brick. */
+class Brick {
+    field int x, y; // screen location of the brick
+    field int size; // length of the brick, in pixels
+
+	constructor Brick new(int Ax, int Ay, int Asize) {
+	    let x = Ax;
+	    let y = Ay;
+	    let size = Asize;
+	    do draw();
+	    return this;
+   	}
+
+   	/** Disposes this brick. */
+    method void dispose() {
+       do Memory.deAlloc(this);
+       return;
+    }
+
+    /** Draws brick on the screen. */
+   	method void draw() {
+       do Screen.setColor(true);
+       do Screen.drawRectangle(x, y, x + size, y + size);
+       return;
+   }
+}

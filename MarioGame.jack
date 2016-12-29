@@ -13,12 +13,13 @@ class MarioGame {
    field Mario mario; // the mario of this game
    field int direction; // the mario's current direction: 
                         // 0=none, 1=up, 2=down, 3=left, 4=right
-
+   field Brick brick;
    /** Constructs a new Mario Run Game. */
    constructor MarioGame new() {
       // Creates a 30 by 30 pixels mario and positions it at the top-left
       // of the screen.
       let mario = Mario.new(0, 210, 30);
+      let brick = Brick.new(50, 150, 30);
       let direction = 0;  // initial state is no movement
       return this;
    }
@@ -26,6 +27,7 @@ class MarioGame {
    /** Disposes this game. */
    method void dispose() {
       do mario.dispose();
+      do brick.dispose();
       do Memory.deAlloc(this);
       return;
    }
