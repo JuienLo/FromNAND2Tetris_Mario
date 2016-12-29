@@ -64,7 +64,7 @@ class Mario {
    /** Moves the mario up by 2 pixels. */
    method void Jump() {
       let time = 0;
-      while (time < 30) {
+      while (time < 29) {
          do Screen.setColor(false);
          do Screen.drawRectangle(x, (y + size) - 1, x + size, y + size);
          let y = y - 2;
@@ -80,6 +80,8 @@ class Mario {
          do Output.println();      // New line
          do Output.printString("  Score:");
          do Output.printInt(score);
+         do Screen.setColor(true);
+         do Screen.drawRectangle(125, 120, 125 + size, 120 + size);
          }
       }
       if(x>372){
@@ -89,9 +91,11 @@ class Mario {
          do Output.println();      // New line
          do Output.printString("  Score:");
          do Output.printInt(score);
+         do Screen.setColor(true);
+         do Screen.drawRectangle(402, 120, 402 + size, 120 + size);
          }
       }
-      let time = 30;
+      let time = 29;
       while (time > 0) {
          do Screen.setColor(false);
          do Screen.drawRectangle(x, y, x + size, y + 1);
