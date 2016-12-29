@@ -23,10 +23,10 @@ class MarioGame {
       let brick = Brick.new(125, 120, 30);
       let brick = Brick.new(150, 120, 30);
 
-      let brick = Brick.new(350, 120, 30);
-      let brick = Brick.new(375, 120, 30);
-      let brick = Brick.new(400, 120, 30);
-      let brick = Brick.new(425, 120, 30);
+      let brick = Brick.new(352, 120, 30);
+      let brick = Brick.new(377, 120, 30);
+      let brick = Brick.new(402, 120, 30);
+      let brick = Brick.new(427, 120, 30);
 
       do Output.moveCursor(12, 17);
       do Output.printString("?");
