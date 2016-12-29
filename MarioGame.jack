@@ -18,8 +18,18 @@ class MarioGame {
    constructor MarioGame new() {
       // Creates a 30 by 30 pixels mario and positions it at the top-left
       // of the screen.
+      /* Prints some text using the standard library. */
+      do Output.println();      // New line
+      do Output.printString("  Score:0");
       let mario = Mario.new(0, 210, 30);
-      let brick = Brick.new(50, 150, 30);
+      let brick = Brick.new(100, 120, 30);
+      let brick = Brick.new(125, 120, 30);
+      let brick = Brick.new(150, 120, 30);
+
+      let brick = Brick.new(350, 120, 30);
+      let brick = Brick.new(375, 120, 30);
+      let brick = Brick.new(400, 120, 30);
+      let brick = Brick.new(325, 120, 30);
       let direction = 0;  // initial state is no movement
       return this;
    }

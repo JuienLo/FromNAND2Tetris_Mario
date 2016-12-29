@@ -21,6 +21,8 @@ class Brick {
    	method void draw() {
        do Screen.setColor(true);
        do Screen.drawRectangle(x, y, x + size, y + size);
+       do Screen.setColor(false);
+       do Screen.drawRectangle(x+5, y+5, x + size-5, y + size-5);
        return;
    }
 }
