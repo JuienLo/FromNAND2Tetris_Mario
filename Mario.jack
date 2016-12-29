@@ -4,12 +4,19 @@ class Mario {
    field int x, y; // screen location of mario
    field int size; // length of this mario, in pixels
    field int time; // time for the mario to jump
+   field int score;
 
    /** Constructs a new mario with a given location and size. */
    constructor Mario new(int Ax, int Ay, int Asize) {
+      /* Prints some text using the standard library. */
+      let score = 0;
+      do Output.println();      // New line
+      do Output.printString("  Score:");
+      do Output.printInt(score);
       let x = Ax;
       let y = Ay;
       let size = Asize;
+      let score = 0;
       do draw();
       return this;
    }
