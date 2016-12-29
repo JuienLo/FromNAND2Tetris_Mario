@@ -11,6 +11,8 @@ class Brick {
 	    return this;
    	}
 
+   	
+
    	/** Disposes this brick. */
     method void dispose() {
        do Memory.deAlloc(this);

@@ -73,6 +73,24 @@ class Mario {
          let time = time + 1;
          do Sys.wait(time + 2);
       }
+      if(x>95){
+         if(x<150){
+         do Output.moveCursor(0, 0);
+         let score = score + 30;
+         do Output.println();      // New line
+         do Output.printString("  Score:");
+         do Output.printInt(score);
+         }
+      }
+      if(x>372){
+         if(x<427){
+         do Output.moveCursor(0, 0);
+         let score = score + 30;
+         do Output.println();      // New line
+         do Output.printString("  Score:");
+         do Output.printInt(score);
+         }
+      }
       let time = 30;
       while (time > 0) {
          do Screen.setColor(false);
