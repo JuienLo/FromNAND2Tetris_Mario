@@ -245,12 +245,12 @@ push constant 0
 not
 call Screen.setColor 1
 pop temp 0
-push constant 125
-push constant 120
-push constant 125
+push constant 132
+push constant 127
+push constant 118
 push this 2
 add
-push constant 120
+push constant 113
 push this 2
 add
 call Screen.drawRectangle 4
@@ -306,12 +306,12 @@ push constant 0
 not
 call Screen.setColor 1
 pop temp 0
-push constant 402
-push constant 120
-push constant 402
+push constant 409
+push constant 127
+push constant 395
 push this 2
 add
-push constant 120
+push constant 113
 push this 2
 add
 call Screen.drawRectangle 4

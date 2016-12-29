@@ -81,7 +81,7 @@ class Mario {
          do Output.printString("  Score:");
          do Output.printInt(score);
          do Screen.setColor(true);
-         do Screen.drawRectangle(125, 120, 125 + size, 120 + size);
+         do Screen.drawRectangle(132, 127, 118 + size, 113 + size);
          }
       }
       if(x>372){
@@ -92,7 +92,7 @@ class Mario {
          do Output.printString("  Score:");
          do Output.printInt(score);
          do Screen.setColor(true);
-         do Screen.drawRectangle(402, 120, 402 + size, 120 + size);
+         do Screen.drawRectangle(409, 127, 395 + size, 113 + size);
          }
       }
       let time = 29;
